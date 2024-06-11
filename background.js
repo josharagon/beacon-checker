@@ -30,7 +30,6 @@ function checkRequest(details, requestBody) {
         website: {
           trackingCode: "string",
         },
-        pageLoadId: "string", // Added based on provided data
       },
       event: {
         context: {
@@ -101,7 +100,6 @@ function checkRequest(details, requestBody) {
       context: {
         userId: "string",
         sessionId: "string",
-        pageLoadId: "string",
         website: {
           trackingCode: "string",
         },
@@ -126,7 +124,6 @@ function checkRequest(details, requestBody) {
       context: {
         userId: "string",
         sessionId: "string",
-        pageLoadId: "string",
         website: {
           trackingCode: "string",
         },
@@ -178,7 +175,6 @@ function checkRequest(details, requestBody) {
       context: {
         userId: "string",
         legacyUserId: "string",
-        pageLoadId: "string",
         sessionId: "string",
         website: {
           trackingCode: "string",
