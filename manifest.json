@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Network Request Monitor",
+  "version": "1.0",
+  "description": "Monitors specific network requests to ensure they match a predefined structure.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "webRequest",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
