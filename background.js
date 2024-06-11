@@ -89,7 +89,7 @@ function checkRequest(details, requestBody) {
         profile: {
           tag: "string",
           placement: "string",
-          seed: "string",
+          seed: "array",
         },
       },
       id: "string",
